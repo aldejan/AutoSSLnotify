@@ -2,7 +2,6 @@
   //1 – Definimos Para quem vai ser enviado o email
   $para1 = "seuemail@gmail.com";
   $site = "seudominio.com";
-  //email do sistema para rememente
 
   // 3 - resgatar o assunto digitado no formulário e  grava na variavel //$assunto
   $assunto1 = "Seu SSL foi Renovado Automaticamente!";
