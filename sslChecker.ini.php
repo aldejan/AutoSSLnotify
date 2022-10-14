@@ -1,6 +1,6 @@
 [sslChecker]
 # Example domains - Change these to be your own domains
-domains[]="www.livemochas.com";
+domains[]="www.seudominio.com";
 
 # When to turn orange. Turns red when less than 0
 warnDays = 30
