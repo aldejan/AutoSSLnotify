@@ -1,6 +1,6 @@
 <?php
-$para = "aldejan-lourenco@hotmail.com";
-$site = "livemochas.com";
+$para = "username@gmail.com";
+$site = "seudominio.com";
 //edite tambem sslChecker.ini.php
 ?>
 
