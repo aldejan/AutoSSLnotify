@@ -1,5 +1,5 @@
 [sslChecker]
-# Example domains - Change these to be your own domains
+# Example domains - Change these to be your own domains com www
 domains[]="www.seudominio.com";
 
 # When to turn orange. Turns red when less than 0
