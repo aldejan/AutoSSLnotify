@@ -22,4 +22,4 @@ Para usar edite os arquivos config.php e os arquivos sslChecker.ini.php
 
 5 = crie esse comando  = 
 
-0	0	20	*/2	* cd /home/xxxxxxx/.acme.sh > /dev/n>&1; ./acme.sh --server letsencrypt --force --issue -d seudominio.com -d *.seudominio.com --dns dns_gd > /dev/null 2>&1; ./acme.sh --deploy -d seudominio.com -d *.seudominio.com --deploy-hook cpanel_uapi > /dev/null 2>&1; curl https://www.seudominio.com/AutoSSLnotify/notify.php > /dev/null 2>&1
+0	0	20	*/2	* curl https://www.seudominio.com/AutoSSLnotify/notify.php >/dev/null 2>&1; cd /home/xxxxxxx/.acme.sh >/dev/null 2>&1; ./acme.sh --server letsencrypt --force --issue -d seudominio.com -d *.seudominio.com --dns dns_gd >/dev/null 2>&1; ./acme.sh --deploy -d seudominio.com -d *.seudominio.com --deploy-hook cpanel_uapi >/dev/null 2>&1
