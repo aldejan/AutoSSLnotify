@@ -7,7 +7,7 @@ Para usar edite os arquivos config.php e os arquivos sslChecker.ini.php
 #### NO CMD LOGADO NO SSH DO SITE:
 1 = cd; cd www
 
-2 = git clone https://github.com/aldejan/AutoSSLnotify.git
+2 = ``git clone https://github.com/aldejan/AutoSSLnotify.git``
 
 #### NO GERENCIADOR DE ARQUIVOS DO CPAINEL:
 3 = edite o arquivo www/AutoSSLnotify/notify.php, coloque seu email(ou varios emails) e o dominio sem www.
