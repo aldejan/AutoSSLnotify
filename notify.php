@@ -5,9 +5,9 @@
   $assunto = "Verifique seus Certificados SSLs!";
    //4 – Agora definimos a  mensagem que vai ser enviado no e-mail
   $mensagem = "Ola Admin<br /><br />
-  Verifique se seus Certificados SSLs foram estao Renovados.<br />
+  Verifique se seus Certificados SSLs foram Renovados.<br />
   Acesse esse link <a target='_black' href='https://".$site."/AutoSSLnotify/sslChecker.php'>https://".$site."/AutoSSLnotify/sslChecker.php</a> para ver se a açao realmente aconteceu.<br /><br />
- Este Email é enviado automaticamente todo Mes";
+ Este Email e enviado automaticamente todo Mes";
 
 //5 – agora inserimos as codificações corretas e  tudo mais.
   $headers =  "Content-Type:text/html; charset=UTF-8\n";
