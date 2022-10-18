@@ -5,7 +5,7 @@ Para usar edite os arquivos config.php e os arquivos sslChecker.ini.php
 
 ## Instale o renovador de Certificados automaticos
 #### NO CMD LOGADO NO SSH DO SITE:
-1 = cd; cd www
+1 = ``cd; cd www``
 
 2 = ``git clone https://github.com/aldejan/AutoSSLnotify.git``
 
@@ -16,10 +16,7 @@ Para usar edite os arquivos config.php e os arquivos sslChecker.ini.php
 
 #### NO CPAINEL EDITE O CRON:
 
-4 = delete esse comando =  
-
-39	0	*	*	*	"/home/v16wlg8p87pp/.acme.sh"/acme.sh --cron --home "/home/v16wlg8p87pp/.acme.sh" > /dev/null
-
 5 = crie esse comando  = 
 
-0	0	20	*/2	* curl https://www.seudominio.com/AutoSSLnotify/notify.php >/dev/null 2>&1; cd /home/xxxxxxx/.acme.sh >/dev/null 2>&1; ./acme.sh --server letsencrypt --force --issue -d seudominio.com -d *.seudominio.com --dns dns_gd >/dev/null 2>&1; ./acme.sh --deploy -d seudominio.com -d *.seudominio.com --deploy-hook cpanel_uapi >/dev/null 2>&1
+``0	0	1	*	*	php -q /home/xxxxx/public_html/AutoSSLnotify/notify.php >/dev/null 2>&1``
+
