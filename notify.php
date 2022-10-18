@@ -11,11 +11,11 @@
 
 //5 – agora inserimos as codificações corretas e  tudo mais.
   $headers =  "Content-Type:text/html; charset=UTF-8\n";
-  $headers .= "From: Auto SSL ".$site." <sistemas@".$site.">\n"; //Vai ser //mostrado que  o email partiu deste email e seguido do nome
-  $headers .= "X-Sender:  <sistemas@".$site.">\n"; //email do servidor //que enviou
+  $headers .= "From: AutoSSL <".$remetente.">\n"; //Vai ser //mostrado que  o email partiu deste email e seguido do nome
+  $headers .= "X-Sender:  <".$remetente.">\n"; //email do servidor //que enviou
   $headers .= "X-Mailer: PHP  v".phpversion()."\n";
   $headers .= "X-IP:  ".$_SERVER['REMOTE_ADDR']."\n";
-  $headers .= "Return-Path:  <sistemas@".$site."\n"; //caso a msg //seja respondida vai para  este email.
+  $headers .= "Return-Path:  <".$remetente."\n"; //caso a msg //seja respondida vai para  este email.
   $headers .= "MIME-Version: 1.0\n";
 
 mail($para, $assunto, $mensagem, $headers);  //função que faz o envio do email.
